@@ -11,19 +11,19 @@
 
 declare(strict_types=1);
 
-namespace ApiPlatform\State;
+namespace ApiPlatform\Metadata\Resource\Factory;
 
+use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Link;
 use ApiPlatform\Metadata\Operation;
 
 /**
- * Process data: send an email, persist to storage, add to queue etc.
- *
- * @author Antoine Bluchet <soyuka@gmail.com>
+ * @internal
  */
-interface ProcessorInterface
+interface PropertyLinkFactoryInterface
 {
     /**
-     * Handle the state.
+     * Create a link for a given property.
      */
-    public function process(mixed $data, Operation $operation, array $uriVariables = [], array $context = []);
+    public function createLinkFromProperty(ApiResource|Operation $operation, string $property): Link;
 }

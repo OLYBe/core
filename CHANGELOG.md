@@ -3,6 +3,7 @@
 
 ## 3.0.0
 
+* Metadata: CRUD on subresource with experimental write support (#4932)
 * Symfony: 6.1 compatibility and remove 4.4 and 5.4 support (#4851)
 * Symfony: removed the $exceptionOnNoToken parameter in `ResourceAccessChecker::__construct()` (#4905)
 * Symfony: use conventional service names for Doctrine state providers and processors (#4859)
@@ -14,6 +15,7 @@ Various cleanup in services and removal of backward compatibility layer.
 
 ## 2.7.0
 
+* chore: remove @experimental phpdoc (#4933)
 * Metadata: do not set id when identifier is `false` (#4880)
 * Metadata: automatic GET operation when none is declared (#4881)
 * Metadata: exception to status on operations (#4861)
@@ -182,6 +184,10 @@ Doctrine: new interfaces for Filters and Extensions ready, switch to the `ApiPla
 * Mark the GraphQL subsystem as stable (#4500)
 * feat(test): add `Client::loginUser()` (#4588)
 * feat(http_cache): use symfony/http-client instead of guzzlehttp/guzzle, `ApiPlatform\Core\HttpCache\PurgerInterface` is deprecated in favor of `ApiPlatform\HttpCache\PurgerInterface`, new purger that uses PURGE (#4695)
+
+## 2.6.9
+
+* fix(serializer): remove 'iri' from context cache (#4925)
 
 ## 2.6.8
 

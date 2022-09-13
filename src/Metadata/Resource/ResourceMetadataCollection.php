@@ -22,8 +22,6 @@ use ApiPlatform\Metadata\Operation;
 use ApiPlatform\Metadata\Operations;
 
 /**
- * @experimental
- *
  * @extends \ArrayObject<int, ApiResource>
  */
 final class ResourceMetadataCollection extends \ArrayObject
