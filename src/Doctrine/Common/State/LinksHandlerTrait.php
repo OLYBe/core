@@ -55,9 +55,9 @@ trait LinksHandlerTrait
 
             // Instead, we'll look for the first Query available.
             foreach ($resourceMetadataCollection as $resourceMetadata) {
-                foreach ($resourceMetadata->getGraphQlOperations() as $operation) {
-                    if ($operation instanceof Query) {
-                        $linkedOperation = $operation;
+                foreach ($resourceMetadata->getGraphQlOperations() as $op) {
+                    if ($op instanceof Query) {
+                        $linkedOperation = $op;
                     }
                 }
             }
